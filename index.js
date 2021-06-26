@@ -23,7 +23,6 @@ const app = express();
 
 // EJS
 app.set('view engine','ejs');
-app.set('views','./views');
 
 // session Middleware  -> should be above passport middleware
 app.use(session({
