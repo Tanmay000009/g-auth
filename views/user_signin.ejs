@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/public/css/home.css">
+</head>
+<body>
+    <h1>Sign in</h1>
+    <form action="/users/create-session" method="POST">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Sign In">
+    </form> 
+    <hr>
+    <a href="/auth/google">Log In With Google</a>
+</body>
+</html>
+
