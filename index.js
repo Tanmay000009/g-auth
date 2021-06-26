@@ -46,7 +46,7 @@ app.use('/auth',require('./routes/auth'));
 
 const port = process.env.PORT || 3000;
 
-app.listen(port, function(err) {
+app.listen(port || process.env.PORT, function(err) {
     if (err) {
         console.log("Error in starting the server!!");
     } else {
